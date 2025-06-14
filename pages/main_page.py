@@ -8,7 +8,7 @@ class MainPage(BasePage):
 
     @allure.step('Открываем главную страницу')
     def open_main_page(self):
-        self.open_web_page(Data.URL_MAIN_PAGE)
+        self.open_web_page(Data.BASE_URL)
         self.find_element_with_wait(MainPageLocators.HEADER_LOGO)
 
     @allure.step('Кликаем на ссылку Личный кабинет')
